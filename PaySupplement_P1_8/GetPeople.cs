@@ -17,7 +17,7 @@
 
         public IEnumerable<Person> GetPeopleBornAfter(DateTime date)
         {
-            throw new NotImplementedException();
+            return data.Where(p => p.Birthday > date);
         }
 
         public IEnumerable<Person> GetPeopleByName(string name)
