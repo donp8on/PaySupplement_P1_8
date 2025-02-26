@@ -27,7 +27,7 @@
 
         public IEnumerable<Person> GetPeopleByName(string name)
         {
-            throw new NotImplementedException();
+            return data.Where(p => p.Name == name);
         }
 
         public Person? GetPersonById(int id)
