@@ -4,6 +4,9 @@
     {
         private List<Person> data = new List<Person>();
 
+        /// <summary>
+        /// This method initializes the data set with 1,000,000 people.
+        /// </summary>
         public void InitializePeople()
         {
             Random random = new Random();
