@@ -45,6 +45,10 @@
             return data.FirstOrDefault(p => p.Id == id);
         }
 
+        /// <summary>
+        /// Get all people.
+        /// </summary>
+        /// <returns>Returns all people.</returns>
         public IEnumerable<Person> GetAllPeople()
         {
             return data;
