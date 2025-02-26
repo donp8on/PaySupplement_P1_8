@@ -47,7 +47,7 @@
 
         public IEnumerable<Person> GetAllPeople()
         {
-            throw new NotImplementedException();
+            return data;
         }
     }
 }
