@@ -15,6 +15,11 @@
             }).ToList();
         }
 
+        /// <summary>
+        /// Get people born after a certain date.
+        /// </summary>
+        /// <param name="date">The date of people birthday.</param>
+        /// <returns>Returns all people born after the specified date.</returns>
         public IEnumerable<Person> GetPeopleBornAfter(DateTime date)
         {
             return data.Where(p => p.Birthday > date);
