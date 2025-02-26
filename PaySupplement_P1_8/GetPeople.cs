@@ -37,7 +37,7 @@
 
         public Person? GetPersonById(int id)
         {
-            throw new NotImplementedException();
+            return data.FirstOrDefault(p => p.Id == id);
         }
 
         public IEnumerable<Person> GetAllPeople()
