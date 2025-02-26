@@ -25,6 +25,11 @@
             return data.Where(p => p.Birthday > date);
         }
 
+        /// <summary>
+        /// Get people by name.
+        /// </summary>
+        /// <param name="name">The name of person in data set.</param>
+        /// <returns>Returns all people with matching name.</returns>
         public IEnumerable<Person> GetPeopleByName(string name)
         {
             return data.Where(p => p.Name == name);
