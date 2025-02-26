@@ -35,6 +35,11 @@
             return data.Where(p => p.Name == name);
         }
 
+        /// <summary>
+        /// Get person by id.
+        /// </summary>
+        /// <param name="id">Id of person in data set.</param>
+        /// <returns>Returns a person with the specified ID if found.</returns>
         public Person? GetPersonById(int id)
         {
             return data.FirstOrDefault(p => p.Id == id);
