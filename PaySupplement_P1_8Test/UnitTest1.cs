@@ -21,5 +21,17 @@ namespace PaySupplement_P1_8Test
             Assert.NotEmpty(results);
             Assert.All(results, p => Assert.True(p.Birthday > testDate));
         }
+
+        [Fact]
+        public void ShouldGetPeopleByName_CorrectResults()
+        {
+            var allPeople = _getPeople.GetAllPeople();
+            var randomPerson = allPeople.First();
+
+            var results = _getPeople.GetPeopleByName(randomPerson.Name);
+
+            Assert.NotEmpty(results); 
+            Assert.All(results, p => Assert.Equal(randomPerson.Name, p.Name));
+        }
     }
 }
